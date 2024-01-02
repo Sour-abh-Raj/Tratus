@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f2f2f23f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffffff58;
+  text-shadow: 0 0 10px #800080, 0 0 20px #800080, 0 0 30px #800080,
+    0 0 40px #800080, 0 0 50px #800080, 0 0 60px #800080, 0 0 70px #800080;
+  transition: text-shadow 0.3s ease;
+}
+
+.title:hover {
+  animation: neon-glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+  0% {
+    text-shadow: 0 0 10px #800080, 0 0 20px #800080, 0 0 30px #800080,
+      0 0 40px #800080, 0 0 50px #800080, 0 0 60px #800080, 0 0 70px #800080;
+  }
+  100% {
+    text-shadow: 0 0 20px #800080, 0 0 30px #800080, 0 0 40px #800080,
+      0 0 50px #800080, 0 0 60px #800080, 0 0 70px #800080, 0 0 80px #800080;
+  }
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="submit"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"] {
+  box-shadow: 0 0 15px purple;
+}
+
+input[type="submit"] {
+  background-color: purple;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 15px purple;
+}
+
+input[type="text"]:hover,
+input[type="submit"]:hover {
+  box-shadow: 0 0 25px purple;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.contact span {
+  font-size: 1.2rem;
+  color: #777777ab;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tag {
+  margin-top: 20px;
+}
+
+.tag img {
+  width: 100px;
+  height: 100px;
+}
+
+.stacked-boxes {
+  margin-top: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.link-span-text {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 0 15px rgba(150, 0, 255, 0.8); /* Purple neon shadow */
+}
+
+a {
+  display: block;
+  color: purple;
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.box:hover .link-span-text,
+.box:hover a {
+  box-shadow: 0 0 25px rgba(150, 0, 255, 0.8); /* Hover effect for neon shadow */
+}
